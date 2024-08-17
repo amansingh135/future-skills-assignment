@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.loader-parent {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  height: 70px;
+  width: 70px;
+  border: 6px solid;
+  border-right: 6px solid yellow;
+  border-bottom: 6px solid yellow;
+  animation: rolling 0.9s infinite linear;
+  border-radius: 50%;
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
